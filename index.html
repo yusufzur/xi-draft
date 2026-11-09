@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10140f" />
+    <meta name="description" content="Draft a global 2026/27 football XI from the Süper Lig and Europe's top five leagues, then play European competitions." />
+    <title>XI Draft — Global Football</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="icons/app-icon.svg" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="XI Draft home">
+          <span class="brand-mark">XI</span>
+          <span class="brand-name">DRAFT<span class="brand-dot">.</span></span>
+        </a>
+        <div class="topbar-center"><span class="live-dot"></span> 2026/27 <span class="topbar-divider">/</span> GLOBAL DRAFT</div>
+        <div class="topbar-actions">
+          <button class="text-button account-button" id="account-button" type="button">ACCOUNT</button>
+          <button class="icon-button" id="sound-toggle" type="button" aria-label="Toggle sound" title="Sound effects are off">♫<span class="sound-slash"></span></button>
+        </div>
+      </header>
+      <main id="app" aria-live="polite"></main>
+      <footer class="site-footer">
+        <span>BUILT FOR THE LOVE OF THE GAME</span>
+        <span class="footer-right">6 LEAGUES · UEFA COMPETITIONS · FC 27 PAGE RATINGS · <a href="https://www.ea.com/games/ea-sports-fc/ratings" target="_blank" rel="noreferrer">RATINGS SOURCE</a> · <a href="privacy.html">PRIVACY</a> · <a href="terms.html">TERMS</a></span>
+      </footer>
+    </div>
+    <dialog id="account-dialog" class="account-dialog" aria-labelledby="account-dialog-title">
+      <div id="account-content"></div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="players-2026-27.js?v=bench-20261029a"></script>
+    <script src="global-data-2026-27.js?v=bench-20261029a"></script>
+    <script src="app.js?v=bench-20261029a"></script>
+    <script src="supabase-config.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2.118.0/dist/umd/supabase.js" integrity="sha384-TcHRA3zBbn+Lexh5n+Oil4guNPOS3rjNDpGRAN46u/s/mB2IZ50ceC6TYDU2yvgK" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="account.js"></script>
+    <script src="register-sw.js"></script>
+  </body>
+</html>
