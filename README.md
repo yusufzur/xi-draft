@@ -30,6 +30,10 @@ This is a static site: there is no package install or build step.
 2. Visit <http://localhost:8000> in a browser. The service worker, local saves and responsive layout can be tested from this origin.
 3. To deploy, publish the project directory with a static host such as Netlify. The included `_headers` file provides the site's HTTP security headers; verify them on the deployed site.
 
+### Quick smoke test
+
+Start a draft, choose a formation and complete all 15 picks. Reload the page to confirm the squad is restored, start a friendly, play through a 15-minute period and make a substitution at the break. Reload again to confirm the match clock, lineup and substitution are retained. The app stores this state under `xi-draft-superlig-2026-27-v3` in browser local storage.
+
 ## Optional Supabase accounts
 
 Guest play and local saving work without an account. To set up cloud saves:
